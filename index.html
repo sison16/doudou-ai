@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07101e" />
+    <meta name="description" content="豆豆ai，轻松开启你的专属空间。" />
+    <title>登录 · 豆豆ai</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="auth-layout" aria-label="豆豆ai 账户">
+        <header class="brand-block">
+          <img
+            class="brand-photo"
+            src="assets/mung-beans.svg"
+            alt="一颗颗饱满的绿豆"
+            width="88"
+            height="88"
+          />
+          <p class="brand-name">豆豆ai</p>
+          <p class="brand-tagline">让每一颗灵感，都慢慢发芽</p>
+        </header>
+
+        <section class="auth-card" aria-labelledby="form-title">
+          <div class="card-heading">
+            <span class="eyebrow" id="form-eyebrow">欢迎回来</span>
+            <h1 id="form-title">登录你的账户</h1>
+            <p id="form-subtitle">继续探索属于你的豆豆空间</p>
+          </div>
+
+          <form id="login-form" class="auth-form" novalidate>
+            <label class="field-label" for="login-username">用户名</label>
+            <div class="input-wrap">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-3.2 3.3-5 7-5s6.5 1.8 7 5"/></svg>
+              <input id="login-username" name="username" type="text" placeholder="请输入用户名" autocomplete="username" />
+            </div>
+
+            <label class="field-label" for="login-password">密码</label>
+            <div class="input-wrap">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10" width="15" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <input id="login-password" name="password" type="password" placeholder="请输入密码" autocomplete="current-password" />
+              <button class="visibility-toggle" type="button" data-toggle-for="login-password" aria-label="显示密码" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.2-6 9.5-6 9.5 6 9.5 6-3.2 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.7"/></svg>
+              </button>
+            </div>
+
+            <button class="primary-button" type="submit">
+              <span>登录</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5M10 16l4-4-4-4M14 12H3"/></svg>
+            </button>
+          </form>
+
+          <form id="register-form" class="auth-form" novalidate hidden>
+            <label class="field-label" for="register-username">用户名</label>
+            <div class="input-wrap">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-3.2 3.3-5 7-5s6.5 1.8 7 5"/></svg>
+              <input id="register-username" name="username" type="text" placeholder="创建一个用户名" autocomplete="username" />
+            </div>
+
+            <label class="field-label" for="register-password">密码</label>
+            <div class="input-wrap">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10" width="15" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <input id="register-password" name="password" type="password" placeholder="创建一个密码" autocomplete="new-password" />
+              <button class="visibility-toggle" type="button" data-toggle-for="register-password" aria-label="显示密码" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.2-6 9.5-6 9.5 6 9.5 6-3.2 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.7"/></svg>
+              </button>
+            </div>
+
+            <label class="field-label" for="register-confirm">确认密码</label>
+            <div class="input-wrap">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10" width="15" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <input id="register-confirm" name="confirm-password" type="password" placeholder="再输入一次密码" autocomplete="new-password" />
+              <button class="visibility-toggle" type="button" data-toggle-for="register-confirm" aria-label="显示密码" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.2-6 9.5-6 9.5 6 9.5 6-3.2 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.7"/></svg>
+              </button>
+            </div>
+
+            <button class="primary-button" type="submit">
+              <span>创建账户</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM19 8v6M22 11h-6"/></svg>
+            </button>
+          </form>
+
+          <p class="status-message" id="status-message" role="status" aria-live="polite" hidden></p>
+
+          <section id="signed-in" hidden aria-label="已登录">
+            <div class="account-badges" aria-label="账户标记">
+              <span id="beta-badge" class="account-badge beta-badge" hidden>内测用户</span>
+              <span id="admin-badge" class="account-badge admin-badge" hidden>管理员</span>
+            </div>
+            <div class="launch-notice">
+              <span class="launch-label">豆豆ai · 正式版预告</span>
+              <h2>11月16日正式版推出</h2>
+              <p><time datetime="2026-11-16T00:00:00+08:00">2026年11月16日</time> · 北京时间</p>
+            </div>
+            <p id="membership-copy" class="signed-in-copy">在北京时间 2026年11月16日零点前成功登录，即可获得永久内测用户标记。</p>
+            <button id="sign-out" class="primary-button" type="button">退出登录</button>
+          </section>
+
+          <p class="switch-prompt" id="login-switch">
+            还没有账户？ <button class="text-link" type="button" data-view="register">立即注册</button>
+          </p>
+          <p class="switch-prompt" id="register-switch" hidden>
+            已有账户？ <button class="text-link" type="button" data-view="login">返回登录</button>
+          </p>
+        </section>
+
+        <footer class="page-footer">
+          <span>© 2026 豆豆ai</span>
+          <span class="footer-dot" aria-hidden="true">·</span>
+          <a href="https://commons.wikimedia.org/wiki/File:Mung_beans.png" target="_blank" rel="noreferrer">绿豆照片：Tiia Monto / Wikimedia Commons · CC BY-SA 4.0</a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

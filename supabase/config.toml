@@ -1,0 +1,4 @@
+project_id = "doudou-ai"
+
+[functions.username-auth]
+verify_jwt = false
